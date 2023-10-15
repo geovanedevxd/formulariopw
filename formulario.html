@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Formulário</title>
 </head>
+
 <body>
-    <h1>Formulário</h1>
+    <h1>Formulário 1</h1>
     <form method="get" action="./index.html">
         <label for="nome">Nome:</label>
         <input type="text" id="nome"><br>
@@ -15,13 +17,13 @@
         <input type="text" id="dn"><br>
 
         <label for="sexo">Sexo:</label>
-        <input type="radio" name="sexo"id="masc">
+        <input type="radio" name="sexo" id="masc">
         <label for="masc" name="sexo">Masc</label>
 
-        <input type="radio" name="sexo"id="fem">
+        <input type="radio" name="sexo" id="fem">
         <label for="fem" name="sexo">Fem</label>
 
-        <input type="radio" name="sexo"id="pni">
+        <input type="radio" name="sexo" id="pni">
         <label for="pni" name="sexo">Prefiro não informar</label><br>
 
         <label for="endereco">Endereço:</label><br>
@@ -45,10 +47,58 @@
         <label for="email">Email:</label>
         <input type="text" id="email"><br>
 
-        <input type="submit" value="Limpar">
+        <input type="reset" value="Limpar">
         <input type="submit" value="Enviar">
     </form>
+    <h1>Formulário 2</h1>
+    <form class="form2" action="./index.html" method="get">
+        <fieldset class="section1">
+            <legend>Dados Pessoais</legend>
 
-    <a href="./index.html">Volte a página principal</a>
+            <label for="nome">Nome</label>
+            <input type="text"><br>
+            <label for="dn">Data de Nascimento</label>
+            <input type="date" name="dn" id="dn"><br>
+            <label for="E-mail">E-mail</label>
+            <input type="text"><br>
+            <label for="Telefone">Telefone</label>
+            <input type="text"><br>
+        </fieldset><br>
+        <fieldset class="section2">
+            <legend>Dados Acadêmicos</legend><br>
+            <label for="curso">Curso</label>
+            <select name="curso" id="curso">
+                <option value="ADS">ADS</option>
+                <option value="CDD">CDD</option>
+                <option value="SI">SI</option>
+            </select><br>
+            <label for="semestre">Semestre:</label>
+            <input type="radio" name="semestre" id="1">
+            <label for="semestre" id="1">1</label>
+            <input type="radio" name="semestre" id="2">
+            <label for="semestre" id="2">2</label>
+            <input type="radio" name="semestre" id="2">
+            <label for="semestre" id="3">3</label>
+            <input type="radio" name="semestre" id="2">
+            <label for="semestre" id="5">4</label>
+            <input type="radio" name="semestre" id="2">
+            <label for="semestre" id="5">5</label>
+        </fieldset>
+        <fieldset class="section3">
+            <label for="trabalha">Trabalha?</label>
+            <input type="checkbox" name="trabalha" id="trabalha"><br>
+            <label for="local">Local de Trabalho:</label>
+            <input type="text"><br>
+            <label for="experiencia">Descreva sua experiência</label><br>
+            <textarea name="descreva" id="desc" cols="55" rows="4"></textarea>
+        </fieldset>
+        <input type="submit" name="gravar" value="Gravar">
+        <input type="reset" name="limpar" value="Limpar">
+    </form>
+
+    <br><br>
+
+    <a href="./index.html">Clique aqui para voltar a página principal</a>
 </body>
+
 </html>
